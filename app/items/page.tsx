@@ -1,3 +1,10 @@
+import Navigation from "../../components/navigation";
+
 export default function Items() {
-  return <h1>items</h1>;
+  return (
+    <div>
+      <Navigation />
+      <h1>items</h1>
+    </div>
+  );
 }
