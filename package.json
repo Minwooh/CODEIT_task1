@@ -4,9 +4,20 @@
   "description": "코드잇 과제",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev"
   },
   "keywords": [],
   "author": "",
-  "license": "MIC"
+  "license": "MIC",
+  "dependencies": {
+    "next": "^15.1.4",
+    "reacr": "^1.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "@types/react": "19.0.4",
+    "typescript": "5.7.3"
+  }
 }
