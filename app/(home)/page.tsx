@@ -1,3 +1,4 @@
+import InputAddContainer from "../../components/input";
 import Navigation from "../../components/navigation";
 
 const URL = "https://assignment-todolist-api.vercel.app/api";
@@ -12,11 +13,25 @@ export default async function HomePage() {
   return (
     <div>
       <Navigation />
-      <div id="background" style={{ backgroundColor: "#000" }}>
-        <img src="/images/search@3x.png" alt="입력 창" />
-        <input type="text" name="title" placeholder="할 일을 입력하세요" />
+      <div
+        id="background"
+        style={{
+          display: "flex",
+          backgroundColor: "#000",
+          flexDirection: "column", // 세로 정렬
+          alignItems: "center", // 가로 방향 중앙 정렬
+          justifyContent: "center",
+        }}
+      >
+        <InputAddContainer />
 
-        <div id="content">
+        <div
+          id="content"
+          style={{
+            display: "flex", // 가로 정렬
+            flexDirection: "row",
+          }}
+        >
           <div id="l" style={{ backgroundColor: "#050" }}>
             djkf
             <div id="todo_list">
