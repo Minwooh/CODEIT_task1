@@ -9,7 +9,7 @@ const InputBox = styled.div`
   min-width: 280px;
   height: 56px;
 
-  margin-right: 10px;
+  margin-right: 20px;
 `;
 
 const InputContent = styled.input`
@@ -33,7 +33,7 @@ export default function InputAddContainer() {
         />
         <InputContent
           type="text"
-          name="title"
+          name="todo"
           placeholder="할 일을 입력해주세요"
         />
       </InputBox>

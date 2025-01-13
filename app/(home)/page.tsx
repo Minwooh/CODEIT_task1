@@ -1,3 +1,9 @@
+import {
+  DoneImg,
+  Middle1,
+  TodoImg,
+  Middle2,
+} from "../../components/home_td_style";
 import InputAddContainer from "../../components/input";
 import Navigation from "../../components/navigation";
 
@@ -32,18 +38,18 @@ export default async function HomePage() {
             flexDirection: "row",
           }}
         >
-          <div id="l" style={{ backgroundColor: "#050" }}>
-            djkf
-            <div id="todo_list">
+          <Middle1>
+            <TodoImg />
+            <div id="todo_list" style={{ backgroundColor: "#f8f" }}>
               <div id="todo" />
             </div>
-          </div>
-          <div id="r" style={{ backgroundColor: "#500" }}>
-            sfsd
+          </Middle1>
+          <Middle2>
+            <DoneImg />
             <div id="done_list">
               <div id="done" />
             </div>
-          </div>
+          </Middle2>
         </div>
       </div>
     </div>
